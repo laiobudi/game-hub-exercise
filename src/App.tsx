@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 
-import DarkModeSwitch from "./components/DarkModeSwitch";
+import ColorModeSwitch from "./components/ColorModeSwitch";
 import ListGroup from "./components/ListGroup";
 import { Grid, GridItem, Show } from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
