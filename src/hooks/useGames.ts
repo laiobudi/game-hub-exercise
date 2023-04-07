@@ -8,9 +8,10 @@ import { CanceledError } from "axios";
 /// Games.       ///
 ////////////////////
 
-interface Game {
+export interface Game {
 	id: number;
 	name: string;
+	background_image: string;
 }
 
 interface FetchGamesResponse {
