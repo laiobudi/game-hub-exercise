@@ -1,10 +1,11 @@
 import { useState } from "react";
+import { Grid, GridItem, Show } from "@chakra-ui/react";
 import "./App.css";
 
 import ColorModeSwitch from "./components/ColorModeSwitch";
 import ListGroup from "./components/ListGroup";
-import { Grid, GridItem, Show } from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
+import GameGrid from "./components/GameGrid";
 
 function App() {
 	return (
@@ -24,7 +25,7 @@ function App() {
 					</GridItem>
 				</Show>
 				<GridItem area="main" bg="dodgerblue">
-					Main
+					<GameGrid />
 				</GridItem>
 			</Grid>
 		</div>
