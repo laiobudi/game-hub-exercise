@@ -2,3 +2,7 @@ html {
 	/* background-color: #1c1c1c; */
 	/* margin: 1rem; */
 }
+
+form {
+	width: 100%;
+}
