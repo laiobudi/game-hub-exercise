@@ -1,3 +1,4 @@
+import platform from "../data/platform";
 import useData from "./useData";
 
 interface Platform {
@@ -6,6 +7,10 @@ interface Platform {
 	slug: string;
 }
 
-const usePlatforms = () => useData<Platform>("/platforms/lists/parents");
+// const usePlatforms = () => useData<Platform>("/platforms/lists/parents");
+// Uncomment above line to replace the below line so that the app actively
+// queries the platform data from the api.
+
+const usePlatforms = () => ({ data: platform, error: null });
 
 export default usePlatforms;
